@@ -1,0 +1,23 @@
+{
+  "name": "helpers",
+  "version": "0.0.0",
+  "description": "Jon Morehouse's coffeescript / node helpers",
+  "main": "index.coffee",
+  "private": true,
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/MorehouseJ09/coffee_helpers.git"
+  },
+  "keywords": [
+    "Coffee"
+  ],
+  "author": "Jon Morehouse",
+  "license": "BSD",
+  "readmeFilename": "readme.md",
+  "devDependencies": {
+    "moment": "~2.0.0"
+  }
+}
