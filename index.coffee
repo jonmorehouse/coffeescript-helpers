@@ -6,6 +6,7 @@
 module.exports = ->
 
 	# include our basic coffeescript extensions that we like!
-	do require "./coffee_helpers"
+	do require "./array"
+	do require "./string"
 	# require some bigger modules that we want to access globally
 	# do require "./modules"
