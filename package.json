@@ -19,5 +19,8 @@
   "readmeFilename": "readme.md",
   "devDependencies": {
     "moment": "~2.0.0"
+  },
+  "dependencies": {
+    "moment": "~2.0.0"
   }
 }
