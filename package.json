@@ -18,7 +18,11 @@
   "license": "BSD",
   "readmeFilename": "readme.md",
   "devDependencies": {
-    "moment": "~2.0.0"
+    "moment": "~2.0.0",
+    "grunt-jasmine-node": "~0.1.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jasmine-node": "~0.1.0",
+    "jasmine-node": "~1.8.0"
   },
   "dependencies": {
     "moment": "~2.0.0"

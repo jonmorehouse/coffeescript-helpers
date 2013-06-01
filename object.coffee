@@ -32,6 +32,7 @@ module.exports = ->
 	    for object in objects
 	        for key, value of object
 	            @[key] = value
-	    return 
+	            
+	    return @
 
 
