@@ -12,3 +12,10 @@ Current Modules
 
 -	Strings
 -	Arrays
+
+
+Installation Help (Because I can never remember ... )
+
+npm install git://github.com/morehousej09/coffee_helpers.git
+
+
