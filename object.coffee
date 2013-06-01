@@ -6,8 +6,22 @@ module.exports = ->
 		# create the new instance
 		newInstance = new Object()
 
+		test = 
+
+			name: "JON"
+
 		# now set all of the element by doing a pretty list comprehension!
-		newInstance[key] = @[key] if typeof @[key] == "object" else @[key] for key of @
+		# newInstance[key] = test if typeof(@[key]) == "object" else @[key] for key of @
+		for key of @
+
+			# now recursively grab teh proper elements and exlude the functions etc
+			switch typeof @[key]	
+
+				when "function" then continue
+
+				when "object" then newInstance[key] = @[key].clone()
+
+				else newInstance[key] = @[key]	
 
 		# return our newInstance
 		return newInstance
