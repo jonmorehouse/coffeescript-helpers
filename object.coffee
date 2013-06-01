@@ -6,13 +6,9 @@ module.exports = ->
 		# create the new instance
 		newInstance = new Object()
 
-		test = 
-
-			name: "JON"
-
 		# now set all of the element by doing a pretty list comprehension!
 		# newInstance[key] = test if typeof(@[key]) == "object" else @[key] for key of @
-		for key of @
+		for own key of @
 
 			# now recursively grab teh proper elements and exlude the functions etc
 			switch typeof @[key]	
@@ -30,7 +26,7 @@ module.exports = ->
 	Object::extend = (objects...) ->
 		
 	    for object in objects
-	        for key, value of object
+	        for own key, value of object
 	            @[key] = value
 	            
 	    return @

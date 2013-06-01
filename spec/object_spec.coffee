@@ -17,3 +17,13 @@ describe "Object", ->
 				lastName: "Morehouse"
 
 			should.exist extendedData
+
+		it "Should only affect the prototype", ->
+
+			data = 
+				name: "Jon"
+
+			methods = []	
+			methods.push key for own key of data
+
+			methods.should.be.empty
